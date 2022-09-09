@@ -1,0 +1,8 @@
+<h1>New Game</h1>
+<% @letters.each do |letter| %>
+<p><%= letter %></p>
+<% end %>
+  <form action="/score" data-turbo="false">
+    <input type="text" name="user_input" placeholder="try your best!">
+    <input type="submit" value="Go!">
+  </form>
